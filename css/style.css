@@ -1,0 +1,17 @@
+[x-cloak] {
+  display: none;
+}
+
+body.modern {
+  background: #fdfaf7;
+  color: #222;
+}
+/* body.legacy {
+  background: #eee;
+  color: #333;
+} */
+button.toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}

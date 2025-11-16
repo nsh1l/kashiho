@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html
+  lang="ja"
+  x-data="{ legacy: localStorage.getItem('legacy') === 'true' }"
+  x-init="$watch('legacy', val => localStorage.setItem('legacy', val))"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.2/dist/cdn.min.js"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  </head>
+
+  <body :class="{ legacy: legacy, modern: !legacy }">
+    <button @click="legacy = !legacy" class="toggle">デザイン切り替え</button>
+
+    <div x-show="!legacy" x-cloak>
+      <div>{% include "new.html" %}</div>
+    </div>
+    <div x-show="legacy" x-cloak>
+      <div>{% include "legacy.html" %}</div>
+    </div>
+  </body>
+</html>
