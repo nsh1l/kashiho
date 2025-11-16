@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分類</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+
+      header {
+        width: 100%;
+        background-color: white;
+        padding: 0.5rem;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 592px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .logo-link {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        text-decoration: none;
+      }
+
+      .logo-link img {
+        height: 68px;
+        width: 66px;
+        display: block;
+      }
+
+      nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        flex: 1;
+        min-width: 120px;
+      }
+
+      nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        padding: 0.5rem;
+        color: #5b5b5b;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: background-color 0.2s ease;
+        border-right: 1px solid #f0f0f0;
+      }
+
+      nav li:last-child a {
+        border-right: none;
+      }
+
+      nav a:hover {
+        background-color: #f9f9f9;
+      }
+
+      .top-page-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        padding: 0.5rem;
+        color: #5b5b5b;
+        text-decoration: none;
+        font-size: 0.75rem;
+        text-align: center;
+        border-top: 1px solid #f0f0f0;
+        transition: background-color 0.2s ease;
+      }
+
+      .top-page-link:hover {
+        background-color: #f9f9f9;
+      }
+
+      @media (max-width: 640px) {
+        .header-container {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav li {
+          width: 100%;
+          min-width: unset;
+        }
+
+        nav a {
+          border-right: none;
+          border-bottom: 1px solid #f0f0f0;
+          height: 50px;
+        }
+
+        nav li:last-child a {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="/index.njk" class="logo-link" title="トップページへ">
+          <img src="assets/img/ushi_cyan.jpg" alt="新田菓子舗ロゴ" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="online_undertop_2.html"
+                target="flame_under"
+                title="はじめに！"
+                >はじめに！</a
+              >
+            </li>
+            <li>
+              <a
+                href="wagashi/online_wagashi_1.html"
+                target="flame_under"
+                title="和菓子"
+                >和菓子</a
+              >
+            </li>
+            <li>
+              <a
+                href="yougashi/online_yougashi_1.html"
+                target="flame_under"
+                title="洋菓子"
+                >洋菓子</a
+              >
+            </li>
+            <li>
+              <a
+                href="yougashi/sufure/online_sufure_1.html"
+                target="flame_under"
+                title="チーズケーキ"
+                >チーズケーキ</a
+              >
+            </li>
+            <li>
+              <a
+                href="choco/online_choco_1.html"
+                target="flame_under"
+                title="チョコレート"
+                >チョコレート</a
+              >
+            </li>
+            <li>
+              <a href="ame/online_ame_1.html" target="flame_under" title="アメ"
+                >アメ</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div style="text-align: center">
+        <a href="/index.njk" class="top-page-link" title="トップページへ"
+          >Top Pageへ</a
+        >
+      </div>
+    </header>
+  </body>
+</html>

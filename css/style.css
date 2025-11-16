@@ -6,12 +6,160 @@ body.modern {
   background: #fdfaf7;
   color: #222;
 }
-/* body.legacy {
-  background: #eee;
-  color: #333;
-} */
+
 button.toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
+}
+
+.legacy .container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.legacy .card {
+  width: 550px;
+  background: var(--legacy-card);
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.legacy .title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.legacy .title .accent {
+  font-weight: 700;
+}
+.legacy .lead {
+  background: #f0ffd9;
+  padding: 0.75rem;
+  border-radius: 4px;
+  color: #564e1b;
+}
+.legacy .meta {
+  font-size: 0.85rem;
+  color: #565656;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+.legacy a {
+  color: inherit;
+}
+@media (max-width: 640px) {
+  .legacy .card {
+    width: 100%;
+  }
+}
+
+/* small utilities for legacy pages */
+.legacy .cta {
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Legacy header / navigation styles (migrated from inline pages) */
+.legacy header {
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem;
+}
+.legacy .header-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 592px;
+  height: auto;
+  margin: 0 auto;
+}
+.legacy .logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.legacy .logo-link img {
+  height: 68px;
+  width: 66px;
+  display: block;
+}
+.legacy nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.legacy nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.legacy nav li {
+  flex: 1;
+  min-width: 120px;
+}
+.legacy nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0.5rem;
+  color: #5b5b5b;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border-right: 1px solid #f0f0f0;
+}
+.legacy nav li:last-child a {
+  border-right: none;
+}
+.legacy nav a:hover {
+  background-color: #f9f9f9;
+}
+.legacy .top-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0.5rem;
+  color: #5b5b5b;
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+.legacy .top-page-link:hover {
+  background-color: #f9f9f9;
+}
+.legacy .top-center {
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .legacy .header-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .legacy nav ul {
+    flex-direction: column;
+  }
+  .legacy nav li {
+    width: 100%;
+    min-width: unset;
+  }
+  .legacy nav a {
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    height: 50px;
+  }
+  .legacy nav li:last-child a {
+    border-bottom: none;
+  }
 }
