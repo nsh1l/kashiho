@@ -14,6 +14,7 @@ AlpineJS
 
 ## フォルダ構成
 
+```
 // .
 // ├── eleventy.config.js # Eleventy config
 // ├── index.njk # ランディングページ
@@ -26,3 +27,4 @@ AlpineJS
 // │ └── style.css
 // ├── assets/ # 画像などのアセット
 // │ └── img/
+```
