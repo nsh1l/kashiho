@@ -11,3 +11,20 @@ Eleventy (11ty)
 ### JS フレームワーク
 
 AlpineJS
+
+## フォルダ構成
+
+```
+// .
+// ├── eleventy.config.js # Eleventy config
+// ├── index.njk # ランディングページ
+// ├── _includes/
+// │ ├── layout-legacy.html # 旧サイト
+// │ └── layout-new.html # 新規サイト
+// ├── _data/
+// │ └── site.js # サイト全体で再利用可能なメタデータ
+// ├── css/
+// │ └── style.css
+// ├── assets/ # 画像などのアセット
+// │ └── img/
+```
